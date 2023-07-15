@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+header {
+    background-color: #EAC926;
+    box-sizing: border-box;
+
+}
+
+header a {
+    color: black;
+}
+
+header input {
+    width: 50%;
+    border-color: white;
+}
+
+header button {
+    border-color: white;
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+img {
+    max-width: 100%;
+    text-align: center;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.logoML {
+    width: 30%;
+    margin: 20px;
+}
+
+.fondoBlanco {
+    background-color: white;
+}
+
+.navBar {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.buscador {
+    display: flex;
+    justify-content: left;
+    position: static;
+}
+
+
+.producto-contenedor {
+    margin: 10px 0;
+}
+
+.descripcion-un-renglon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precios {
+    font-size: 18px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0;
+}
+
+.nombre-producto {
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px
+}
+
+
+.burger-container {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-home {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    background-color: #ebebeb;
+    box-sizing: border-box;
+}
+
+main section {
+    width: 90%;
+    padding: 15px;
+}
+
+footer {
+    box-sizing: border-box;
+}
+
+footer div {
+    text-align: center;
+    padding: 15px;
+}
+
+footer i {
+    font-size: 2em;
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer p {
+    padding: 0 40px;
+}
+
+.titulos-footer {
+    text-align: center;
+    font-size: 18px;
+}
+
+.logo-envio {
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    left: 80%;
+}
+
+
+.logo-envio:hover {
+    transform: rotate(90deg);
+}
+
+
+.descripcion-producto {
+    text-align: left;
+    padding: 10px;
+    opacity: 0;
+}
+
+/* cel */
+@media (max-width: 361px) {
+
+    .descripcion-producto {
+        display: none;
+    }
+
+    .links-header {
+        display: none;
+    }
+
+    .producto-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links-header {
+        padding: 15px;
+    }
+
+    .contenedor-header {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* tablet */
+@media (min-width: 362px) and (max-width: 768px) {
+
+
+    .descripcion-producto:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    .producto-contenedor:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .seccion-catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .seccion-catalogo .producto-contenedor {
+        width: 40vw;
+    }
+
+    .links-izq {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .links-der {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .nombre-producto,
+    .precios,
+    .descuento {
+        font-size: 12px;
+    }
+
+    .links-header {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    .logo-envio {
+        position: relative;
+        top: -20px;
+        left: 70%;
+
+    }
+}
+
+@media (min-width: 769px) {
+
+    .descripcion-producto:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    .producto-contenedor:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .seccion-catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .seccion-catalogo .producto-contenedor {
+        width: 20vw;
+    }
+
+    .links-header {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+
+    }
+
+    .links-izq {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .links-der {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .logo-envio {
+        position: relative;
+        top: -20px;
+        left: 70%;
+    }
+
+    .footer-pc {
+        width: 30%;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    footer i:hover {
+        color: #343434;
+    }
+}

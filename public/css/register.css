@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+main {
+    background-color: #ebebeb;
+}
+
+
+.formulario {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario input,
+label {
+    margin: 10px;
+    /* width: 90%;*/
+}
+
+label,
+.perfil-usuario,
+.categoria-interes {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.caja-perfil-usuario,
+.caja-categoria-interes,
+.categoria-check {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input {
+    border: white;
+    height: 25px;
+}
+
+.boton {
+    color: white;
+    background-color: #343434;
+    border-radius: 3px;
+    height: 25px;
+
+}
+
+.formulario-div {
+    display: flex;
+}
+
+.campo-requerido {
+    color: red;
+    font-size: 15px;
+}
+
+.boton:hover {
+    background-color: #0022AA
+}
+
+.elementos-register1 {
+    display: flex;
+}
+
+
+.main-formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos-register {
+    width: 70vw;
+}
+
+.datos-register-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cel */
+@media (max-width: 361px) {
+
+    .formulario {
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .caja-categoria-interes {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .datos-register-flex {
+        align-items: flex-start;
+    }
+
+    .categoria-check-reverse {
+        flex-direction: row-reverse;
+    }
+}
